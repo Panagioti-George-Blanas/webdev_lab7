@@ -1,11 +1,11 @@
-td, th {
-	border: 1px solid;
-  }
 /* General body styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 20px;
     background-color: #f4f4f9;
+    background-image: url('images/background.png'); 
+    background-size: cover; 
+    background-attachment: fixed; 
 }
 
 /* Heading styles */
@@ -14,6 +14,7 @@ h1 {
     color: #3c9dd0;
     font-size: 2.5rem;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 /* Table styling */
@@ -21,6 +22,9 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
+    border-radius: 10px; /* Rounded corners for the table */
+    overflow: hidden; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 th, td {
@@ -29,23 +33,29 @@ th, td {
     text-align: center;
 }
 
+/* Table header styling */
 th {
     background-color: #4caf50;
     color: white;
     font-weight: bold;
+    font-style: italic; /* Italics for table headers */
 }
 
+/* Table data styling */
 td {
     background-color: #f9f9f9;
+    vertical-align: middle;
+    font-style: italic; /* Italics for the data inside the table */
 }
 
+/* Image styling */
 td img {
-    width: 80px;
+    width: 80px;  /* Image size */
     height: auto;
-    border-radius: 50%;
+    border-radius: 50%; /* Circular image effect */
 }
 
-/* Table row hover effect */
+/* Alternating row colors and hover effect */
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
@@ -54,24 +64,7 @@ tr:hover {
     background-color: #d1f7d3;
 }
 
-/* Styling for the table cells */
-td {
-    vertical-align: middle;
-    text-align: center;
-}
-
+/* Styling for first column */
 td:first-child {
     font-weight: bold;
-}
-
-/* Add some spacing between columns */
-table td, table th {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-td img {
-    width: 80px;  
-    height: auto; 
-    border-radius: 50%; 
-}
+    font-style: normal; 
