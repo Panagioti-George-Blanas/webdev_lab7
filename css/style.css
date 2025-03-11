@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 20px;
     background-color: #f4f4f9;
-    background-image: url('images/background.png'); 
+    background-image: url('images/background.png'); /* Space Background */
     background-size: cover; 
     background-attachment: fixed; 
 }
